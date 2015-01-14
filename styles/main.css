@@ -1,0 +1,76 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/*
+Colors
+*/
+/*
+  Fonts
+*/
+/*
+  Sizes
+*/
+/*
+Body
+*/
+body {
+  margin-top: 50px;
+  color: #47a3da;
+  font-family: "Droid Sans Mono"; }
+
+.content {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.column {
+  float: left;
+  display: block;
+  margin-right: 3.53311%;
+  width: 30.97793%; }
+  .column:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 501px) and (max-width: 840px) {
+    .column {
+      float: left;
+      display: block;
+      margin-right: 7.32502%;
+      width: 100%; }
+      .column:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 501px) and (max-width: 840px) and (min-width: 501px) and (max-width: 840px) {
+    .column .image-container,
+    .column .text {
+      float: left;
+      display: block;
+      margin-right: 7.32502%;
+      width: 46.33749%; }
+      .column .image-container:last-child,
+      .column .text:last-child {
+        margin-right: 0; } }
+
+  @media screen and (max-width: 500px) {
+    .column {
+      float: left;
+      display: block;
+      margin-right: 11.40524%;
+      width: 100%; }
+      .column:last-child {
+        margin-right: 0; } }
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%; }
+
+/*# sourceMappingURL=main.css.map */

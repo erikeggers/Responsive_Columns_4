@@ -1,0 +1,54 @@
+@import 'bourbon/bourbon';
+$gutter: em(47px);
+@import 'neat/neat';
+/*
+Colors
+*/
+$blue: #47a3da;
+$primary-color: $blue;
+/*
+  Fonts
+*/
+$body-font: 'Droid Sans Mono';
+/*
+  Sizes
+*/
+$mobile: new-breakpoint(max-width 500px 4);
+$tablet: new-breakpoint(min-width 501px max-width 840px 6);
+$image-container-width: 100%;
+$image-container-height: 100%;
+/*
+Body
+*/
+body {
+  margin-top: 50px;
+  color: $primary-color;
+  font-family: $body-font;
+}
+
+.content {
+  @include outer-container(950px);
+}
+
+.column {
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(6);
+
+    .image-container,
+    .text {
+      @include media($tablet) {
+        @include span-columns(3 of 6);
+      }
+   }
+}
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+
+.image-container img {
+  max-width: $image-container-width;
+  max-height: $image-container-height;
+}
